@@ -200,6 +200,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/text_recommended" />
 
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/movie_viewpager2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:layout_marginBottom="@dimen/_24sdp"
+        android:paddingStart="@dimen/_50sdp"
+        android:paddingEnd="@dimen/_50sdp"
+        app:layout_constraintBottom_toTopOf="@id/text_recommended"
+        app:layout_constraintTop_toBottomOf="@id/layout_search" />
+
 
     <me.ibrahimsn.lib.SmoothBottomBar
         android:id="@+id/smooth_bottom_bar"
@@ -213,9 +224,12 @@
         app:iconTint="@color/bottom_bar_icon_tint"
         app:iconTintActive="@color/bottom_bar_icon_tint_active"
         app:indicatorColor="@color/bottom_bar_indicator_color"
+        app:indicatorRadius="@dimen/_10sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/menu_bottom_navigation"
         app:textColor="@color/bottom_bar_text_color"
         app:textSize="@dimen/_10ssp" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
